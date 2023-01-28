@@ -218,7 +218,7 @@ flexible easy option: `source: anyhow::Error` (from the `anyhow` crate)
 
 ---
 
-# Let the inner error do the work: `#[transparent]`
+# Let the inner error do the work: `#[error(transparent)]`
 
 You can forward the `source` and `std::fmt::Display` implementations from the inner error to the outer error.
 
