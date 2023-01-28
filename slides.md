@@ -131,7 +131,7 @@ pub enum MyEnumError {
     SimpleVariant,
     #[error("found only {0} entries")]
     NotEnoughEntries(usize),
-    #[error("Not warm enough: {temperature} {unit} <= {}", MIN_TEMP)]
+    #[error("Not warm enough: {temperature} {unit} < {}", MIN_TEMP)]
     Temperature { temperature: usize, unit: String },
 }
 ```
